@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.15;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  width: 100vw;
+}
+
+body {
+  @apply w-full lg:overflow-x-hidden;
+  background: url("/dot-bg.svg") #FFFFFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.view__text {
+  font-size: 64px;
+  margin-bottom: 15px;
+  line-height: 115.02%;
+  background: linear-gradient(
+    62.01deg,
+    #407bff 18.51%,
+    #21e6d5 56.3%,
+    #212867 86.53%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.realtime__text {
+  font-size: 64px;
+  line-height: 115.02%;
+  background: linear-gradient(
+    62.01deg,
+    #407bff 18.51%,
+    #21e6d5 56.3%,
+    #212867 86.53%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.efficiency__text {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 115.02%;
+  background: linear-gradient(
+    62.01deg,
+    #407bff 18.51%,
+    #21e6d5 56.3%,
+    #212867 86.53%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.faq{
+  background: rgba(47, 128, 237, 0.1)
+}
+
+.footer__text {
+  font-size: 36px;
+  line-height: 44px;
+  background: linear-gradient(
+    62.01deg,
+    #407bff 18.51%,
+    #21e6d5 56.3%,
+    #212867 86.53%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media screen and (max-width: 768px) {
+  .view__text {
+    font-size: 35px;
+  }
+  .realtime__text {
+    font-size: 35px;
+  }
+  .efficiency__text {
+    font-size: 35px;
+  }
+  .footer__text {
+    font-size: 24px;
+  }
+}
